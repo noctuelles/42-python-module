@@ -5,7 +5,6 @@ if __name__ == "__main__":
     sys.tracebacklimit = 0
     assert len(sys.argv) == 3, ("invalid number of arguments.")
     args = sys.argv[1:3]
-
     assert args[1].isdigit(), ("second argument must be a positive integer.")
     words = args[0].split(" ")
     n = int(args[1])

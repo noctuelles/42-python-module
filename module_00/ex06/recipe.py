@@ -40,4 +40,3 @@ def addRecipe(name, ingredients, meal_type, prep_time):
 if __name__ == "__main__":
     addRecipe('Prout', ['caca', 'haricot'], 'lunch', '30')
     printRecipes()
-
