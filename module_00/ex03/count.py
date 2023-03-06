@@ -3,7 +3,7 @@ import sys
 
 def text_analyzer(text):
     """This function counts the number of upper characters, lower characters,
-       punctuation and spacesin a given text."""
+       punctuation and spaces in a given text."""
     sys.tracebacklimit = 0
     assert type(text) is str and text is not None, ("argument is not a string.")
     while text is None or len(text) == 0:
