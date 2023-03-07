@@ -6,7 +6,7 @@
 #    By: plouvel <plouvel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/06 17:49:59 by plouvel           #+#    #+#              #
-#    Updated: 2023/03/07 18:11:25 by plouvel          ###   ########.fr        #
+#    Updated: 2023/03/07 18:13:12 by plouvel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,11 @@ import sys
 from time import time
 
 
-def ft_progress(list):
-    list_size = len(list)
+def ft_progress(lst):
+    list_size = len(lst)
     start = time()
     last = 0
-    for index, elem in enumerate(list):
+    for index, elem in enumerate(lst):
         percentage = int(index / list_size * 100)
         progress_bar = "=" + "=" * int(((index / list_size) * 19)) + ">"
         now = time()
