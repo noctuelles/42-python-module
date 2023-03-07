@@ -6,7 +6,7 @@
 #    By: plouvel <plouvel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 18:42:30 by plouvel           #+#    #+#              #
-#    Updated: 2023/03/07 18:42:31 by plouvel          ###   ########.fr        #
+#    Updated: 2023/03/07 18:46:05 by plouvel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,6 +74,8 @@ def printOptions():
 
 def interactiveAddRecipe():
     name = input(">>> Enter a name:\n")
+    if name == "":
+        return
     print(">>> Enter ingredients:")
     ingredients = []
     while True:
@@ -83,7 +85,15 @@ def interactiveAddRecipe():
         else:
             ingredients.append(ingredient)
     meal_type = input(">>> Enter a meal type:\n")
-    prep_time = input(">>> Enter a preparation time:\n")
+    if meal_type == "":
+        return
+    prep_time = ""
+    while True:
+        prep_time = input(">>> Enter a preparation time:\n")
+        if prep_time.isdigit():
+            break
+        else:
+            print("Preparation time must be a non negative integer")
     addRecipe(name, ingredients, meal_type, prep_time)
     print("Recipe added !")
 
