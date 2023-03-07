@@ -6,7 +6,7 @@
 #    By: plouvel <plouvel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/06 17:21:25 by plouvel           #+#    #+#              #
-#    Updated: 2023/03/06 17:44:50 by plouvel          ###   ########.fr        #
+#    Updated: 2023/03/07 18:14:20 by plouvel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,6 @@ You have to enter a number between 1 and 99 to find out the secret number.
 Type 'exit' to end the game.
 Good luck!\n"""
     )
-    print(nbr_to_guess)
     while True:
         print("What's your guess between 1 and 99?")
         usr_input = input(">> ")
